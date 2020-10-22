@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		281137212541997F00609F41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281137202541997F00609F41 /* AppDelegate.swift */; };
 		281137232541997F00609F41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281137222541997F00609F41 /* SceneDelegate.swift */; };
-		281137252541997F00609F41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281137242541997F00609F41 /* ViewController.swift */; };
 		281137282541997F00609F41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281137262541997F00609F41 /* Main.storyboard */; };
 		2811372A2541998300609F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281137292541998300609F41 /* Assets.xcassets */; };
 		2811372D2541998300609F41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2811372B2541998300609F41 /* LaunchScreen.storyboard */; };
 		281137382541998300609F41 /* HW6___Random_Contact_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281137372541998300609F41 /* HW6___Random_Contact_ListTests.swift */; };
 		281137432541998300609F41 /* HW6___Random_Contact_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281137422541998300609F41 /* HW6___Random_Contact_ListUITests.swift */; };
+		2811375425419A5000609F41 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811375325419A5000609F41 /* ContactListViewController.swift */; };
+		2811375C25419BC800609F41 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811375B25419BC800609F41 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		2811371D2541997F00609F41 /* HW6 - Random Contact List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW6 - Random Contact List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		281137202541997F00609F41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		281137222541997F00609F41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		281137242541997F00609F41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		281137272541997F00609F41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		281137292541998300609F41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2811372C2541998300609F41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		2811373E2541998300609F41 /* HW6 - Random Contact ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HW6 - Random Contact ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		281137422541998300609F41 /* HW6___Random_Contact_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HW6___Random_Contact_ListUITests.swift"; sourceTree = "<group>"; };
 		281137442541998300609F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2811375325419A5000609F41 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		2811375B25419BC800609F41 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				281137202541997F00609F41 /* AppDelegate.swift */,
 				281137222541997F00609F41 /* SceneDelegate.swift */,
-				281137242541997F00609F41 /* ViewController.swift */,
 				281137262541997F00609F41 /* Main.storyboard */,
 				281137292541998300609F41 /* Assets.xcassets */,
 				2811372B2541998300609F41 /* LaunchScreen.storyboard */,
+				2811375B25419BC800609F41 /* Model.swift */,
 				2811372E2541998300609F41 /* Info.plist */,
+				2811375325419A5000609F41 /* ContactListViewController.swift */,
 			);
 			path = "HW6 - Random Contact List";
 			sourceTree = "<group>";
@@ -258,9 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				281137252541997F00609F41 /* ViewController.swift in Sources */,
+				2811375425419A5000609F41 /* ContactListViewController.swift in Sources */,
 				281137212541997F00609F41 /* AppDelegate.swift in Sources */,
 				281137232541997F00609F41 /* SceneDelegate.swift in Sources */,
+				2811375C25419BC800609F41 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
