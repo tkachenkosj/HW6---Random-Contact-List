@@ -13,9 +13,22 @@ struct Person {
     let lastName: String
     let phoneNumber: String
     let eMail: String
+    
+    static func createPersons() -> [Person] {
+        var persons: [Person] = []
+        
+        for index in 0..<names.count {
+            let person = Person(firstName: names[index],
+                                 lastName: surnames[index],
+                                 phoneNumber: phoneNumbers[index],
+                                 eMail: eMails[index])
+            persons.append(person)
+        }
+        return persons
+    }
 }
 
-var names = [
+let names = [
     "Ivan",
     "Vasiliy",
     "Nikolay",
@@ -24,20 +37,20 @@ var names = [
     "Yuriy",
     "Andrey",
     "Aleksandr"
-]
+].shuffled()
 
-var surnames = [
+let surnames = [
     "Utyugov",
     "Knizhkin",
     "Otkrytkin",
     "Monitorov",
     "Makbookin",
     "Knopkin",
-    "Myshlin",
+    "Myshkin",
     "Probelov"
-]
+].shuffled()
 
-var phoneNumbers = [
+let phoneNumbers = [
     "198364738",
     "085493648",
     "274539562",
@@ -46,9 +59,9 @@ var phoneNumbers = [
     "997644828",
     "862498622",
     "111828199"
-]
+].shuffled()
 
-var eMails = [
+let eMails = [
     "dog@google.com",
     "cat@google.com",
     "mouse@google.com",
@@ -57,19 +70,8 @@ var eMails = [
     "bird@google.com",
     "bug@google.com",
     "giraffe@google.com"
-]
+].shuffled()
 
-var persons = [Person]()
 
-func makeList(array: [Person]) -> [Person] {
-    for _ in 0..<names.count {
-        let person = Person(firstName: names[Int.random(in: 0..<names.count)],
-                             lastName: surnames[Int.random(in: 0..<surnames.count)],
-                             phoneNumber: phoneNumbers[Int.random(in: 0..<phoneNumbers.count)],
-                             eMail: eMails[Int.random(in: 0..<eMails.count)])
-        persons.append(person)
-    }
-    return persons
-}
 
 
